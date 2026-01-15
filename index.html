@@ -1,0 +1,1249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jevelin Startup.</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <style>
+        html, body {
+            scroll-behavior: smooth;
+            
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0px;
+            padding: 0px;
+        }
+
+
+        .section1 {
+            display: flex;
+            gap: 25%;
+            background-color: white;
+            height: 16vh;
+            align-items: center;
+            justify-content: space-between;
+            padding-left: 10vw;
+            padding-right: 10vw;
+            position: sticky;
+            top: 0%;
+            z-index: 10;
+            box-shadow: 1px 1px 6px 0.6px white;
+        }
+
+
+        ul {
+            display: flex;
+            gap: 25px;
+            align-items: center;
+        }
+
+        ul>li {
+            list-style-type: none;
+            font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            
+        }
+
+       ul>li>a:hover {
+        color: blue !important;
+       }
+
+
+        .itemc>i {
+            display: none;
+        }
+
+        i:hover {
+            color: navy;
+        }
+
+        .itemb>ul>li>a {
+            list-style-type: none;
+            text-decoration: none;
+            color: grey;
+        }
+
+       .section2 {
+            background-image: url('./images/Slide.jpg');
+            background-size: cover;
+            background-position: center;
+            height: 100vh;
+            position: relative;
+        }
+
+        .first-page-content {
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: 1fr;
+            width: 40%;
+            padding-left: 9vw;
+            padding-top: 25vh;
+            position: absolute;
+            /* top: 50%; */
+            display: block;
+        }
+
+        #main-page-content {
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-weight: 300;
+            font-size: 3.2rem;
+            color: grey;
+            margin-bottom: 7px;
+            
+        }
+
+        span {
+            color: black;
+            font-weight: 700;
+            
+        }
+
+        p {
+            width: 70%;
+            font-family:Arial, Helvetica, sans-serif;
+            font-size: 1rem;
+            text-align: justify;
+            line-height: 1.5;
+            color: #777;
+        }
+
+        button {
+            margin-top: 30px;
+            font-size: 1.5rem;
+            width: 200px;
+            height: 65px;
+            border-radius: 35px;
+            background-color: rgb(30, 171, 226);
+            border: 2px solid white;
+            transition: all 2s;
+        }
+
+        button:hover {
+            width: 230px;
+            padding-left: 10px;
+        }
+
+        button>a {
+            text-decoration: none;
+            color: white;
+            text-align: center;
+            font-weight: bold;
+        }
+
+
+        /* Section 3  */
+
+        .section3 {
+            width: 100%;
+            height: 100vh;
+            padding-top: 35px;
+            display: flex;
+        }
+
+        .section3> .section3-itema {
+            width: 50%;
+            padding-top: 9.1vh;
+            padding-left: 10vw;
+        }
+
+        #Building-Your_Vision {
+            font-family: helvetica;
+            font-weight: 300;
+            letter-spacing: 1px;
+        }
+
+        #Section3-h1 {
+            margin-top: 20px;
+            font-family: helvetica;
+            font-weight: 100;
+            letter-spacing: 2px;
+            margin-top: 10px;
+            font-size: 2.6rem;
+            line-height: 1.4;
+        }
+
+        #section3-para-1 {
+            width: 60%;
+            margin-top: 30px;
+            margin-bottom: 30px;
+            font-weight: 300;
+            letter-spacing: 1px;
+            font-family: Helvetica;
+            font-size: 1.2rem;
+        }
+
+        #section3-para-2  {
+            width: 65%;
+            margin-top: 30px;
+            margin-bottom: 30px;
+            word-spacing: 1px;
+        }
+
+        .section3>.itemb {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+        }
+
+        .itemb>.section3-img1 {
+            height: 5vh;
+            padding: 30px;
+        }
+
+        .itemb>.section3-img2 {
+            padding: 30px;
+        }
+
+        /* Section 4 Styling */
+
+        .section4 {
+            background-image: url('./images/workplace-office-with-laptop-coffee-dark-room-night.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            height: 125vh;
+            position: relative;
+        }
+
+        .section4>.section-4-about-product {
+            margin-top: 0%;
+            position: absolute;
+            left: 40vw;
+            top: 10vh;
+            line-height: 1.1;
+        }
+
+        .section4-card {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 50px;
+            justify-content: space-evenly;
+            padding: 50px;
+            align-content: center;
+            align-items: center;
+            position: absolute;
+            top: 250px;
+        }
+
+        .section4-card1, .section4-card2, .section4-card3 {
+            padding: 25px;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+            color: white;
+        }
+
+        #section4-p1  {
+            width: 100%;
+            padding: 10px;
+            color: white;
+        }
+
+        #section4-button {
+            width: 150px;
+            height: 45px;
+            border: 1px solid grey;
+            background-color: transparent;
+            color: white;
+            font-size: 1rem;
+        }
+
+        .section4-icon1 {
+            margin-bottom: 20px;    
+            height: 20px;
+        }
+
+        #about-product-para-1 {
+            font-weight: 100;
+            color: white;
+            font-family: Calibri; 
+            text-align: center;
+            font-size: 3rem;
+        }
+
+        /* Section 5 styling */
+
+        .section5 {
+            width: 100%;
+            height: 110vh;
+            /* position: relative; */
+        }
+
+        .section5-headpart {
+            line-height: 1.2;
+            letter-spacing: 1px;
+            margin-left: 30vw;
+        }
+
+        #section5-heading1 {
+            margin-top: 6%;
+            font-size: 2rem;
+            font-weight: 100;
+            margin-left: 18%;
+        }
+
+        #section5-heading2 {
+            font-size: 2.5rem;
+            font-weight: 100;
+            margin-left: 10%;
+        }
+
+        #section5-heading3 {
+           width: 60%;
+           margin-bottom: 40px;
+        }
+
+        .section5-cards {
+            width: 80%;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            padding: 50px;
+            margin-left:150px;
+            height: 200px;
+        }
+
+        .section5-c1 {
+            text-align: center;
+            border-right:0.3px solid grey;
+            height: 30vh;
+            padding-top: 60px;
+        }
+
+        .section5-c2 {
+            padding-top: 60px;
+            text-align: center;
+            border-bottom: 0.3px solid grey;
+            height: 30vh;
+        }
+
+        .section5-c3 {
+            text-align: center;
+            border-top:0.3px solid grey;
+            border-right:0.3px solid grey;
+            height: 30vh;
+            padding-top: 60px;
+        }
+
+        .section5-c4 {
+            text-align: center;
+            height: 30vh;
+            padding-top: 60px;
+        }
+
+
+        /* Section 6 Styling */
+
+        .section6 {
+            width: 100%;
+            height: 105vh;
+            position: relative;
+            border-bottom: 0.5px solid grey;
+        }
+
+        .section6>.section6-firsthalf {
+            background-color: rgb(155, 160, 167);
+            height: 35%;
+        }
+
+        #section6-heading1 {
+            padding-top: 5%;
+            text-align: center;
+            font-weight: 100;
+        }
+
+        #section6-heading2 {
+            text-align: center;
+            font-weight: 100;
+        }
+
+        .section6-cards {
+            position: relative;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 30px;
+            padding: 100px;
+            width: 80%;
+            margin-left: 40px;
+            top: -30%;
+        }
+
+        .section6-c1 {
+            position: relative;
+            padding: 20px;
+        }
+
+        .section6-c2 {
+            position: relative;
+            padding: 20px;
+        }
+
+        .section6-c3 {
+            position: relative;
+            padding: 20px;
+        }
+
+        #section6-card-secondhalf-heading2 {
+            margin-top: 10px;
+            width: 100%;
+            margin-bottom: 10px;
+            padding: 10px;
+        }
+
+        #section6-card-secondhalf-heading3 {
+            margin-top: 10px;
+            width: 100%;
+            margin-bottom: 10px;
+            padding: 10px;
+        }
+
+        #section6-card-secondhalf-heading4 {
+            margin-top: 10px;
+        }
+
+        .section6-card-firsthalf>img {
+            width: 100%;
+        }
+
+
+        /* Section 7 Styling */
+
+        .section7 {
+            width: 100%;
+            display: flex;
+            padding: 50px;
+            gap: 50px;
+            border-bottom: 1px solid rgb(219, 217, 217);
+        }
+
+        .section7-leftside {
+            width: 50%;
+            padding-bottom: 30px;
+            padding-left: 40px;
+        }
+
+        .section7-leftside>img {
+            width: 90%;
+        }
+
+        .section7-rightside {
+            width: 50%;
+            padding-top: 60px;
+            line-height: 1.4;
+            transition-delay: all 4s;
+            transition-duration: 4s;
+        }
+
+        #section7-heading1 {
+            font-weight: 100;
+            font-size: 2.5rem;
+            transition-delay: all 4s;
+            transition-duration: 4s;
+        }
+
+        #section7-heading2 {
+            font-weight: 100;
+            font-size: 1.2rem;
+            padding-bottom: 100px;
+            transition-delay: all 4s;
+            transition-duration: 4s;
+        }
+
+        .section7-card1 {
+            padding: 20px;
+            color: white;
+            border-bottom: 0.5px solid black;
+            background-color: rgb(216, 216, 216);
+            width: 80%;
+            font-size: 1.1rem;
+            transition-property: all;
+            transition-delay: 4s;
+            transition-duration: 4s;
+            transition-timing-function: ease-in;
+        }
+
+        /* Section 8 Styling */
+        .section8 {
+            background-image: url('https://i.pinimg.com/736x/38/b7/0f/38b70f55e6c846a7c4a7190d655645b9.jpg');
+            background-size: cover;
+            overflow-y: hidden;
+            height: 110vh;
+        }
+
+       .section8-content-1>h2 {
+           text-align: center;
+           margin-top: 40px;
+           font-weight: 100;
+           font-size: 3rem;
+       }
+
+       .section8-content-1>p {
+           width: 40%;
+           text-align: center;
+           margin-top: 20px;
+           font-weight: 100;
+           margin-left: 30vw;
+       }
+       
+       .section8-form {
+          width: 60%;
+          position: relative;
+          top: 10%;
+          margin-left: 26vw;
+          /* margin-right: 30vw; */
+          /* border: 2px solid black; */
+          background-color: transparent;
+       }
+
+       .section8-form>input {
+           align-items: center;
+           width: 40%;
+           padding: 20px;
+           border: 2px solid black;
+           border-radius: 40px;
+           margin-bottom: 20px;
+           background-color: white;
+           color: black;
+           font-size: 1rem;
+       }
+
+        .section8-form>textarea {
+           width: 80%;
+           padding: 30px;
+           border: 2px solid black;
+           border-radius: 40px;
+           background-color: transparent;
+        background-color: white;
+           color: black;
+           font-size: 1rem;
+       }
+
+        .section8-form>button {
+          width: 80%;
+          height: 40px;
+          border: none;
+          color: white;
+          font-size: 1rem;
+        }
+
+        /* Section 9 Styling */
+
+        .section9 {
+            height: 60vh;
+            background-color: lightslategrey;
+            color: white;
+            padding-left: 60px;
+        }
+
+        .section9-container1>h1:hover {
+            color: bisque;
+        }
+
+        .section9-container2>h1:hover {
+            color: bisque;
+        }
+
+        .section9-container3>h1:hover {
+            color: bisque;
+        }
+
+        .section9-cards {
+            display: grid;  
+            gap: 40px;  
+            grid-template-columns: 1fr 1fr 1fr;
+            justify-content: space-evenly;
+            padding: 40px;
+            position: relative;
+            top: 50px;
+        }
+
+        .section9-container1 {
+            width: 90%;
+            padding: 20px;
+        }
+
+        .section9-container1>h1 {
+            margin-bottom: 20px;
+        }
+
+        .section9-container1>p{
+            width: 100%;
+            margin-bottom: 20px;
+        }
+
+        .section9-container2 {
+            width: 90%;
+            padding: 20px;
+        }
+
+         .section9-container2>h1 {
+            margin-bottom: 20px;
+        }
+
+
+        .section9-card1 {
+            display: flex;
+            gap: 40px;
+            border-bottom: 1px solid black;
+            margin-bottom: 20px;
+        }
+
+        .section9-card2 {
+            display: flex;
+            gap: 40px ;
+
+        }
+
+        .section9-card1>.section9-itema>img {
+            width:  100px;
+            border: 1px solid black;
+            border-radius:50%;
+            margin-bottom: 20px;
+        }
+
+         .section9-card2>.section9-itema>img {
+            width:  100px;
+            border: 1px solid black;
+            border-radius: 50%;
+        }
+
+
+        .section9-container3 {
+            width: 100%;
+            padding: 20px;
+            /* margin-left: 50px; */
+        }
+
+
+        .section9-container3>h1 {
+            margin-bottom: 20px;
+        }
+
+        
+        .section9-container3>p {
+            margin-left: 2px;
+            line-height: 2;
+            word-spacing: 2px;
+        }
+
+        .section9-container3>p:hover {
+            transition: all 0.5s;
+          transform: translateX(15px);
+        }
+
+
+
+        @media screen and (width<576px) {
+
+            .itema>img {
+                width: 37vw;
+                
+            }
+
+            .itemb>ul {
+                display: none;
+                
+            }
+
+            .section1 {
+                width: 100%;
+                overflow-x: hidden;
+                align-items: center;
+                height: 9vh;
+                box-sizing: border-box;
+                padding-left: 10px;
+                padding-right: 0px;
+                box-shadow:2px 2px 7px 0.8px white;
+            }
+
+            .itemc>i {
+                position: relative;
+                display: block;
+                visibility: visible;
+                font-size: 2rem;
+                right:30px;
+            }
+
+            .section2{
+                height: 75vh;
+                box-sizing: border-box;
+                position: relative;
+            }
+
+            .first-page-content{
+                padding-left: 3vw;
+                width: 90%;
+                top: 4vh;
+            }
+
+
+            #main-page-content {
+                width: 80%;
+                font-size: 1.7rem !important;
+            }
+
+
+            .first-page-content>p{
+                width: 60%;
+               font-size: 1.1rem !important;
+            }    
+
+            .section2>button {
+                height: 50px;
+                width: 25vh;
+            }
+
+            .section1>button:hover {
+                padding-left: 20px;
+            }
+
+            /* Media Screen Of Section 3 */
+            .section3 {
+                width: 100%;
+                height: 130vh;
+                top: 0%;
+                display: block;
+            }
+
+
+            .section3> .section3-itema {
+                width: 100%;
+                padding-top: 1vh;
+                padding-left: 5vw;
+            }
+
+            #Building-Your_Vision {
+                width: 100%;
+                font-size: 0.9rem;
+                letter-spacing: 1px;
+            }
+
+            #Section3-h1 {
+                margin-top: 20px;
+                font-size: 2rem;
+                line-height: 1.2;
+            }
+
+            #section3-para-1 {
+                width: 90%;
+                margin-top: 25px;
+                font-size: 1.2rem;
+                text-align: justify;
+            }
+
+            #section3-para-2  {
+                width: 90%;
+                margin-top: 25px;
+                margin-bottom: 20px;
+                word-spacing: 1px;
+            }
+
+            .section3>.itemb {
+                grid-template-columns: 1fr;
+            }
+
+            .section3-img1>img {
+                height: 400px !important;
+                padding-left: 35px;
+            }
+
+            .section3-img2 {
+                display: none;
+            }
+
+
+        /* Media Screen Of Section 4 */
+
+            .section4 {
+              height: 155vh;
+            }
+         
+            .section4-card {
+                padding: 10px;
+                grid-template-columns: 1fr;
+                top: 170px;
+                
+            }
+
+
+            .section4-card1, .section4-card2, .section4-card3 {
+                padding: 10px; 
+                color: lightseagreen;
+            }
+
+
+            .section4>.section-4-about-product {
+                margin-left: 0px;
+                font-size: 16px !important;
+                position: absolute;
+                left: 24vw;
+                top: 4vh;
+            }
+
+            #about-product-para-1 {
+                font-size: 2.3rem;
+                
+            }
+
+            #section4-button {
+                margin-top: 10px;
+            }
+
+             /* Section 5 styling */
+        
+            .section5 {
+                width: 100%;
+                height: 110vh;
+                position: relative;
+            }
+            .section5>.section5-headpart{
+                width: 100% !important;
+                padding: 30px;
+                box-sizing: border-box;
+                text-align: center;
+                position: absolute;
+                top: 10px;
+                line-height: 1.5;
+                margin-left: 0px ;
+                /* margin-left: 20px !important; */
+            }
+            .section5 .section5-cards{
+                position: absolute;
+                top: 20%;
+                right: 10%;
+                grid-template-columns: 1fr;
+            }
+            
+            #section5-heading1 {
+                margin-left: 0px;
+                font-size: 1.5rem;
+                font-weight: 100;
+            }
+
+            #section5-heading2 {
+                font-size: 1.6rem;
+                font-weight: 100;
+                margin-left: 0px;
+            }
+
+            #section5-heading3 {
+                width:90%;
+                margin-left: 5vw;
+                margin-bottom: 40px;
+                /* margin-top: 15px; */
+            }
+            
+            .section5-c1 {
+                border: none;
+                text-align: center;
+                height: 15vh;
+                padding-top: 60px;
+            }
+
+            .section5-c2 {
+                border: none;
+                padding-top: 60px;
+                text-align: center;
+                height: 15vh;
+            }
+
+            .section5-c3 {
+                border: none;
+                text-align: center;
+                height: 15vh;
+                padding-top: 60px;
+            }
+
+            .section5-c4 {
+                text-align: center;
+                height: 20vh;
+                padding-top: 60px;
+            }
+
+            /* Section 6 Styling */
+
+            .section6-cards {
+                position: relative;
+                display: grid;
+                grid-template-columns: 1fr;
+                padding: 20px;
+                width: 80%;
+                margin-left: 23px;
+                padding-left: 0;
+                top: -17%;
+            }
+
+            .section6-c1 {
+                position: relative;
+                padding: 20px 20px;
+                padding-bottom: 0px;
+
+            }
+
+            .section6-c2 {
+                display: none !important;
+            }
+
+            .section6-c3 {
+                display: none !important;
+            }
+
+            #section6-card-secondhalf-heading2 {
+                margin-top: 10px;
+                width: 100%;
+                /* margin-bottom: 10px; */
+                /* padding: 10px; */
+            }
+
+            #section6-card-secondhalf-heading3 {
+                margin-top: 10px;
+                width: 100%;
+                /* margin-bottom: 10px; */
+                /* padding: 10px; */
+            }
+
+            #section6-card-secondhalf-heading4 {
+                margin-top: 20px;
+                margin-left: 10px;
+            }
+
+            .section6-card-firsthalf>img {
+                height: 100%;
+            }
+
+            /* Section 7 styling */
+
+            .section7 {
+                display: block;
+                box-sizing: border-box;
+                overflow-x: hidden;
+                position: relative;
+               
+            }
+
+            .section7-leftside{
+              width: 100%;
+              height: 30vh;
+              margin-bottom: 100px;
+            }
+
+          
+
+            .section7-rightside {
+                width: 100%;
+                padding: 20px;
+                padding-top: 0px;
+            }
+
+            #section7-heading1 {
+                width: 45%;
+                font-size: 1.8rem;
+            }
+
+            #section7-heading2 {
+                margin-top: 10px;
+                font-size: 1.1rem;
+                padding-bottom: 30px;
+            }
+
+            .section7-cards {
+                width: 92vw;
+            }
+
+            /* Section 8 Media Screen */
+            .section8 {
+                background-size: cover;
+                background-position: center;
+            }
+
+            .section8-content-1>p {
+                width: 70%;
+                margin-left: 70px;
+            }
+
+            .section8-form {
+                top: 10%;
+                margin-left: 85px;
+            }
+
+            .section8-form>input {
+                width: 100%;
+            }
+
+            .section8-form>textarea {
+                width: 100%;
+                height: 110px;
+            }
+
+            .section8-form>button {
+               margin-left: 12%;
+               width: 70%;
+               color: white;
+            }
+
+            .section9 {
+                height: 130vh;
+                padding: 0px;
+            }
+
+            .section9-cards {
+                grid-template-columns: 1fr;
+                top: 0px;
+                padding: 0px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="section1">
+        <div class="itema"><a href="#home"><img src="https://cdn.jevelin.shufflehound.com/wp-content/uploads/sites/13/2017/03/Logo.png" alt=""></a></div>
+        <div class="itemb">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#news">News</a></li>
+                <li><a href="#contacts">Contacts</a></li> <br>
+                <li><a href="#"><i class="fa-solid fa-magnifying-glass fa-2xl"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-twitter fa-2xl"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-facebook-f fa-2xl"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-instagram fa-2xl"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-pinterest-p fa-2xl"></i></a></li>
+            </ul>
+        </div>
+        <div class="itemc">
+            <i class="fa-solid fa-bars fa-2xl" style="color: #000000;"></i>
+        </div>
+    </div>
+
+    <div id="home" class="section2" >
+        <div class="first-page-content" data-aos="zoom-out" data-aos-duration="2000">
+            <h2 id="main-page-content">Time to Create Your <span>Startup website</span> </h2>
+            <p style="color: grey;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius repudiandae velit dicta praesentium natus animi.</p> 
+            <button><a href="">Learn More ...</a></button>
+        </div>
+    </div>
+
+    <div id="services" class="section3">
+        <div class="section3-itema">
+            <h3 id="Building-Your_Vision">BUILDING YOUR VISION</h3>
+            <H1 id="Section3-h1">Lots Of Useful <br> Features For Your <br> Future Website</H1>
+            <p  id="section3-para-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Non expedita facilis quo</p>
+            <p id="section3-para-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores quis autem commodi tempore nisi, perferendis quia porro iure ducimus nam. Sit, corrupti magni eos unde molestiae labore. Esse, tempore ipsa?</p>
+        </div>
+
+        <div class="itemb">
+           <div class="section3-img1">
+                <img src="./images/img_1.jpg" alt="">
+           </div>
+
+            <div class="section3-img2">
+                <img src="./images/img_3.jpg" alt="">
+           </div>
+        </div>
+    </div>
+
+    <div id="about" class="section4">
+        <div class="section-4-about-product">
+            <h4 id="about-product" style="color:white; text-align: center; font-family: helvetica; font-weight: lighter;">ABOUT PRODUCT</h4>
+            <h2 id="about-product-para-1">So how does the</h2>
+            <h2 id="about-product-para-1"><b>Product work?</b></h2>
+        </div>
+        <div class="section4-card">
+            <div class="section4-card1" data-aos="fade-up"
+     data-aos-anchor-placement="top-bottom" data-aos-duration="1000">
+                <div class="section4-icon1">
+                    <i class="fa-solid fa-headset fa-2xl" style="color: lightseagreen;"></i>
+                </div>   
+                <h2 style="color: white;">Awesome Support</h2>
+                <p id="section4-p1">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magnam, labore. Optio, culpa ab. Nam, alias uid veniam eos?</p>
+                <button id="section4-button">LEARN MORE</button>
+            </div>
+
+            <div class="section4-card2" data-aos="fade-up"
+     data-aos-anchor-placement="top-bottom" data-aos-duration="1000">
+                <div class="section4-icon1">
+                    <i class="fa-solid fa-puzzle-piece fa-2xl" style="color: lightseagreen;"></i>
+                </div>
+                <h2 style="color: white;">Multi-purpose</h2>
+                <p id="section4-p1">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magnam, labore. Optio, culpa ab. Nam, alias uid veniam eos?</p>
+                <button id="section4-button">LEARN MORE</button>
+            </div>
+
+            <div class="section4-card3" data-aos="fade-up"
+     data-aos-anchor-placement="top-bottom" data-aos-duration="1000">
+                <div class="section4-icon1">
+                    <i class="fa-regular fa-gem fa-2xl" style="color: lightseagreen;"></i>
+                </div>
+                <h2 style="color: white;">Clean Design</h2>
+                <p id="section4-p1">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magnam, labore. Optio, culpa ab. Nam, alias uid veniam eos?</p>
+                <button id="section4-button">LEARN MORE</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="section5">
+        <div class="section5-headpart">
+            <h4 id="section5-heading1">SOM STATISTICS</h4>
+            <h4 id="section5-heading2">Lets crack some <span>numbers</span></h4>
+            <p id="section5-heading3">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nam, quos quis natus, ipsam eaque esse incidunt ab magni accusamus corporis iure blanditiis quaerat.</p>
+        </div>
+
+        <div class="section5-cards">
+            <div class="section5-c1">
+                <h1>471</h1>
+                <h3>Finished projects</h3>
+            </div>
+            <div class="section5-c2">
+                <h1>1066</h1>
+                <h3>Happy customers</h3>
+            </div>
+            <div class="section5-c3">
+                <h1>72</h1>
+                <h3>Updates made</h3>
+            </div>
+            <div class="section5-c4">
+                <h1>47</h1>
+                <h3>Theme features</h3>
+            </div>
+        </div>
+    </div>
+
+    <div id="news" class="section6">
+        <div class="section6-firsthalf">
+            <h2 id="section6-heading1">I'M PRE TITLE</h1>
+            <h2 id="section6-heading2"><span>Blog</span> news</h1>
+        </div>
+
+        <div class="section6-cards">
+            <div class="section6-c1">
+                <div class="section6-card-firsthalf">
+                    <img src="./images/1-1024x656.jpg" alt="">
+                </div>
+
+                <div class="section6-card-secondhalf">
+                    <pre id="section6-card-secondhalf-heading1">by Shufflehound                    March 10, 2017</pre>
+                    <h1 id="section6-card-secondhalf-heading2">Trip to the blue ocean</h1>
+                    <p id="section6-card-secondhalf-heading3">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deleniti, non adipisci fuga similique assumenda illum perspiciatis incidunt corporis magni ipsa, nemo.</p> <hr>
+                    <h3 id="section6-card-secondhalf-heading4">TRAVEL, UNCATEGORIZED</h3>
+                </div>
+            </div>
+
+            <div class="section6-c2">
+                <div class="section6-card-firsthalf">
+                    <img src="./images/4-1024x656.jpg" alt="">
+                </div>
+
+                <div class="section6-card-secondhalf">
+                    <pre id="section6-card-secondhalf-heading1">by Shufflehound                    March 10, 2017</pre>
+                    <h1 id="section6-card-secondhalf-heading2">Movie that we love</h1>
+                    <p id="section6-card-secondhalf-heading3">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deleniti, non adipisci fuga similique assumenda illum perspiciatis incidunt corporis magni ipsa, nemo.</p> <hr>
+                    <h3 id="section6-card-secondhalf-heading4">MOVIES</h3>
+                </div>
+            </div>
+
+            <div class="section6-c3">
+                <div class="section6-card-firsthalf">
+                    <img src="./images/5-1024x656.jpg" alt="">
+                </div>
+
+                <div class="section6-card-secondhalf">
+                    <pre id="section6-card-secondhalf-heading1">by Shufflehound                    March 10, 2017</pre>
+                    <h1 id="section6-card-secondhalf-heading2">Craftsman at work</h1>
+                    <p id="section6-card-secondhalf-heading3">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deleniti, non adipisci fuga similique assumenda illum perspiciatis incidunt corporis magni ipsa, nemo.</p> <hr>
+                    <h4 id="section6-card-secondhalf-heading4">ART</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="section7">
+        <div class="section7-leftside">
+            <img src="./images/image_2-945x1024.png" alt="">
+        </div>
+
+        <div class="section7-rightside" data-aos="zoom-out-right" data-aos-duration="1000">
+            <h2 id="section7-heading1">Something about <span>product</span></h2>
+            <h2 id="section7-heading2">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nobis, voluptatum recusandae? Cupiditate commodi earum quo blanditiis magnam iure necessitatibus quaerat ullam.</h2>
+
+            <div class="section7-cards" >
+                <div class="section7-card1">...  Some Kind of feature</div>
+                <div class="section7-card1">...  Check this wow feature</div>
+                <div class="section7-card1">...  This is feature</div>
+            </div>
+        </div>
+    </div>
+
+    <div id="contacts" class="section8">
+        <div class="section8-content-1">
+            <h2>Get <span>in touch</span></h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non illo hic omnis perferendis odit facere quisquam officiis? Illo omnis, exercitationem sapiente quo eveniet.</p>
+        </div>
+
+        <div class="section8-form">
+            <input type="text" name="" id="" placeholder="Name">
+            <input type="email" placeholder="E-mail">
+            <textarea rows="5" name="" id="" placeholder="Message text"></textarea>
+            <button type="submit">Submit Message</button>
+        </div>
+
+        <div class="section8-footer">
+
+        </div>
+    </div>
+
+    <div class="section9">
+        <div class="section9-cards">
+            <div class="section9-container1">
+                <h1>About Us</h1>
+                <p style="color: white;">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Optio nesciunt, tempora dolores assumenda voluptates architecto corrupti aut modi alias? Est dignissimos quae, nihil aspernatur ea dolore optio cum illum debitis.</p>
+
+                <div class="section9-icons">
+                    <i class="fa-brands fa-twitter fa-2xl"></i>
+                    <i class="fa-brands fa-facebook-f fa-2xl"></i>
+                    <i class="fa-brands fa-instagram fa-2xl"></i>
+                    <i class="fa-brands fa-pinterest-p fa-2xl"></i>
+                </div>
+            </div>
+            
+            <div class="section9-container2">
+                <h1>Latest News</h1>
+                    <div class="section9-card1">
+                        <div class="section9-itema">
+                            <img src="./images/4-1024x656.jpg" alt="">
+                        </div>
+                        <div class="section9-itemb">
+                            <h3>MOVIES</h3>
+                            <b>Movies that we love</b>
+                        </div>
+                    </div>
+                    <div class="section9-card2">
+                        <div class="section9-itema">
+                            <img src="./images/5-1024x656.jpg" alt="">
+                        </div>
+                        <div class="section9-itemb">
+                            <h3>ART</h3>
+                            <b>Craftsman at work</b>
+                        </div>
+                    </div> 
+            </div>
+
+            <div class="section9-container3">
+                <h1>Contacts</h1>
+                <p style="color: white;"><i class="fa-regular fa-map fa-2xl" style="color: #000000;"></i>   County. Street name - number</p>
+                <p style="color: white;"><i class="fa-solid fa-phone fa-xl" style="color: #000000;"></i>   032 267 899 442</p>
+                <p style="color: white;"><i class="fa-regular fa-envelope fa-xl" style="color: #000000;"></i>   company@name.com</p>
+                <p style="color: white;"><i class="fa-regular fa-clock fa-xl" style="color: #000000;"></i>   Mon-Fri:10-20 Sun: 12-16</p>
+            </div>
+        </div>
+    </div> 
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+</html>
